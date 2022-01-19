@@ -10,7 +10,7 @@ _ANU_PARAMS: Dict[str, Union[int, str]] = {
 }
 _ANU_URL: str = "https://qrng.anu.edu.au/API/jsonI.php"
 
-
+#credit to sbalian for this function
 def get_qrand_int64() -> List[int]:
     """Get quantum random int64s from the ANU API."""
     response = requests.get(_ANU_URL, _ANU_PARAMS)
